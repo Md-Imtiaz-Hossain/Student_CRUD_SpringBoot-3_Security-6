@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link type="text/css" rel="stylesheet" th:href="@{../css/main.css}"/>
 </head>
-<style>
-    .center {
-        padding: 70px 0;
-        text-align: center;
-    }
-</style>
 <body>
-
 <div class="center">
-    <a th:href="@{/signup}"><h1>Sign-up</h1></a><br>
-    <a th:href="@{/login}"><h1>Log-in</h1></a>
+  <a th:href="@{/register}"><h1>Sign-up</h1></a><br>
+  <a th:href="@{/login}"><h1>Log-in</h1></a>
 </div>
-
-
 </body>
 </html>

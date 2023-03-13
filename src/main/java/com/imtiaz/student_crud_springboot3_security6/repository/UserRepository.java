@@ -1,12 +1,10 @@
 package com.imtiaz.student_crud_springboot3_security6.repository;
 
+import java.util.Optional;
+
 import com.imtiaz.student_crud_springboot3_security6.entity.User;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public interface UserRepository extends CrudRepository<User, Long> {
-	
-    User findByUsername(String username);
-
+public interface UserRepository extends JpaRepository<User, Integer> {
+    Optional<User> findUserByEmail(String email);
 }
