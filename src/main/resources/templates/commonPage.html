@@ -2,13 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
-    <title>Insert title here</title>
+    <title>Common page</title>
     <link rel="stylesheet" th:href="@{../css/main.css}" type="text/css"/>
 </head>
 <body>
-<h3>Welcome to Common page.!!!</h3>
-Welcome to Common page.!!!
-<a th:href="@{/welcome}">Welcome</a>
-<a th:href="@{/logout}">LOGOUT</a>
+<h1>Welcome to Common page.!!!</h1>
+Employee Manager Admin Role can access this page<hr>
+
+<ul>
+    <li><a th:href="@{/admin}">Admin</a></li>
+    <li><a th:href="@{/mgr}">Manager</a></li>
+    <li><a th:href="@{/hr}">HR</a></li>
+    <li><a th:href="@{/}">Home</a></li>
+    <li><a th:href="@{/welcome}">Welcome</a></li>
+    <li><a th:href="@{/logout}">LOGOUT</a></li>
+</ul>
+
 </body>
 </html>

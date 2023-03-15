@@ -2,12 +2,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Insert title here</title>
+  <title>Access Denied</title>
   <link type="text/css" rel="stylesheet" th:href="@{../css/main.css}"/>
 </head>
 <body>
-<h3>You are not allowed to access this page. Please go to Welcome Page</h3>
-<a th:href="@{/welcome}" >Welcome</a>
-<a th:href="@{/logout}" >LOGOUT</a>
+<h1>Access Denied</h1>
+<h3>You are not allowed to access this page.</h3><hr>
+
+<ul>
+  <li><a th:href="@{/welcome}" >Welcome</a></li>
+  <li><a th:href="@{/admin}">Admin</a></li>
+  <li><a th:href="@{/emp}">Employee</a></li>
+  <li><a th:href="@{/mgr}">Manager</a></li>
+  <li><a th:href="@{/hr}">HR</a></li>
+  <li><a th:href="@{/common}">Common</a></li>
+  <li><a th:href="@{/}">Home</a></li>
+  <li><a th:href="@{/logout}">LOGOUT</a></li>
+</ul>
 </body>
 </html>

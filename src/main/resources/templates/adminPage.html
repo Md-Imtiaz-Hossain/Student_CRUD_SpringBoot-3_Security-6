@@ -2,12 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
-    <title>Insert title here</title>
+    <title>Admin Page </title>
     <link type="text/css" rel="stylesheet" th:href="@{../css/main.css}"/>
 </head>
 <body>
-<h3> Admin Page </h3>
-Welcome to Admin page.!!!
-<a th:href="@{/logout}">LOGOUT</a>
+<h1> Admin Page </h1>
+Role is Admin can access this page. <hr>
+
+<ul>
+    <li><a th:href="@{/emp}">Employee</a></li>
+    <li><a th:href="@{/mgr}">Manager</a></li>
+    <li><a th:href="@{/hr}">HR</a></li>
+    <li><a th:href="@{/common}">Common</a></li>
+    <li><a th:href="@{/}">Home</a></li>
+    <li><a th:href="@{/logout}">LOGOUT</a></li>
+</ul>
+
 </body>
 </html>

@@ -2,11 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="ISO-8859-1">
-  <title>Insert title here</title>
+  <title>Home</title>
   <link type="text/css" rel="stylesheet" th:href="@{../css/main.css}"/>
 </head>
 <body>
-<h3> welcome to the Home Page </h3>
-This page is accessible to ALL.
+<h1> Welcome to the Home Page </h1>
+This page is accessible to ALL. Any one can access without login.
+
+<ul>
+  <li><a th:href="@{/register}">Sign-up</a></li>
+  <li><a th:href="@{/login}">Log-in</a></li>
+</ul>
+
 </body>
 </html>

@@ -2,11 +2,24 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="ISO-8859-1">
-    <title>Insert title here</title>
+    <title>Welcome Page</title>
     <link rel="stylesheet" th:href="@{../css/main.css}" type="text/css"/>
 </head>
 <body>
-<h3> Welcome Page after successful Login</h3>
-<a th:href="@{/logout}">LOGOUT</a>
+<h1> Welcome Page</h1>
+<h3> After log in all user redirected to this page</h3> <hr>
+
+<p>Try to access below the pages, According to your role see which page you can access and which is not</p>
+
+<ul>
+    <li><a th:href="@{/admin}">Admin</a></li>
+    <li><a th:href="@{/emp}">Employee</a></li>
+    <li><a th:href="@{/mgr}">Manager</a></li>
+    <li><a th:href="@{/hr}">HR</a></li>
+    <li><a th:href="@{/common}">Common</a></li>
+    <li><a th:href="@{/}">Home</a></li>
+    <li><a th:href="@{/logout}">LOGOUT</a></li>
+</ul>
+
 </body>
 </html>
